@@ -1,0 +1,25 @@
+# Nunca publicar credenciales ni ficheros de acceso
+*.ovpn
+*.key
+*.pem
+*.pfx
+.env
+id_rsa*
+*.kdbx
+
+# Evidencia sin censurar (flags, IPs reales, rutas personales)
+raw/
+flag*.txt
+*flag*.txt
+*.pcap
+*.pcapng
+nmap_*.txt
+*_session.txt
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.obsidian/
+*.swp
+*.tmp
