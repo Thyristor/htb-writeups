@@ -55,7 +55,7 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-77-generic x86_64)
 root@Meow:~# id; hostname; cat /root/flag.txt
 uid=0(root) gid=0(root) groups=0(root)
 Meow
-b40a****************************  (censurada)
+********************************  (censurada)
 root@Meow:~# exit
 ```
 
@@ -81,7 +81,7 @@ No pide contraseña: `root` entra directamente con Enter en blanco.
 | 5 | Herramienta más común para encontrar puertos abiertos | `nmap` |
 | 6 | Servicio en el puerto 23/tcp | `telnet` |
 | 7 | Usuario que entra con contraseña en blanco | `root` |
-| Flag | Flag de root | `b40a****…` (censurada), «Root flag owned» |
+| Flag | Flag de root | `********************************…` (censurada), «Root flag owned» |
 
 ---
 
@@ -91,7 +91,7 @@ No pide contraseña: `root` entra directamente con Enter en blanco.
 
 ### 1.1 Diagnóstico de la VPN
 
-Había dos VPN de HTB abiertas a la vez (la de máquinas y la de Starting Point) con rutas duplicadas hacia `10.129.0.0/16`. El tráfico salía por la VPN vieja y el ping devolvía `Destination Host Unreachable`.
+Había dos VPN de HTB abiertas a la vez (la de máquinas y la de Starting Point) con rutas duplicadas hacia la red del laboratorio (`<RED_HTB>`). El tráfico salía por la VPN vieja y el ping devolvía `Destination Host Unreachable`.
 
 ```bash
 # Procesos openvpn activos antes de limpiar
@@ -158,7 +158,7 @@ local: flag.txt remote: flag.txt
 
 ```bash
 cat /tmp/flag.txt
-# 035d****************************  (censurada)
+# ********************************  (censurada)
 ```
 
 ### 1.5 Resumen técnico
@@ -190,7 +190,7 @@ La máquina estaba apagada y las tareas 5-11 bloqueadas. Se arrancó con **Start
 | 9 | Código de respuesta de «Login successful» | `230` | Aceptada |
 | 10 | Otro comando para listar archivos (además de `dir`) | `ls` | Aceptada |
 | 11 | Comando para descargar el archivo | `get` | Aceptada |
-| Flag | Flag del servidor FTP | `035d****…` (censurada) | Aceptada |
+| Flag | Flag del servidor FTP | `********************************…` (censurada) | Aceptada |
 
 Resultado final: **«You have solved Fawn!»**, 26/10/2026, 150 XP.
 
