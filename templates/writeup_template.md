@@ -63,7 +63,7 @@
 ### Lista de revisión antes de publicar
 
 - [ ] Máquina retirada o Starting Point
-- [ ] Flags censuradas (solo los 4 primeros caracteres)
+- [ ] Flags totalmente censuradas (ningún carácter visible)
 - [ ] Sin IPs reales: usar `<IP_OBJETIVO>`
 - [ ] Sin rutas personales (`/mnt/c/Users/...`) ni ficheros `.ovpn`
 - [ ] Capturas revisadas (sin flag, usuario ni IP visibles)
