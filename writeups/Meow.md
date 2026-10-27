@@ -87,7 +87,7 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-77-generic x86_64)
 root@Meow:~# id; hostname; cat /root/flag.txt
 uid=0(root) gid=0(root) groups=0(root)
 Meow
-b40a****************************   (censurada)
+********************************   (censurada)
 root@Meow:~# exit
 ```
 
@@ -112,7 +112,7 @@ No aplica. El acceso inicial ya es `root` (`uid=0`).
 | 5 | Herramienta más común para encontrar puertos abiertos | `nmap` |
 | 6 | Servicio en el puerto 23/tcp | `telnet` |
 | 7 | Usuario que entra con contraseña en blanco | `root` |
-| Flag | Flag de root | `b40a****…` (censurada) |
+| Flag | Flag de root | `********************************…` (censurada) |
 
 ## 9. Impacto y riesgo
 

@@ -120,7 +120,7 @@ local: flag.txt remote: flag.txt
 cat flag.txt
 ```
 ```
-035d****************************
+********************************
 ```
 
 ![Login FTP anónimo, listado y descarga de flag.txt; flag censurada](img/fawn_04_ftp_anonimo.png)
@@ -176,7 +176,7 @@ anonymous_enable=YES
 
 Al principio el `ping` devolvía `Destination Host Unreachable` y, en un intento paralelo desde Windows, `nmap` mostraba los 1000 puertos como `filtered`.
 
-- **Causa:** tenía abiertas dos VPN de HTB a la vez (la de máquinas y la de Starting Point), con rutas duplicadas hacia `10.129.0.0/16`. El tráfico salía por la VPN antigua.
+- **Causa:** tenía abiertas dos VPN de HTB a la vez (la de máquinas y la de Starting Point), con rutas duplicadas hacia la red del laboratorio (`<RED_HTB>`). El tráfico salía por la VPN antigua.
 - **Solución:** cerrar todas las conexiones y dejar solo la correcta.
   ```bash
   pgrep -a openvpn          # ver procesos
